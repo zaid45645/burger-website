@@ -1,0 +1,44 @@
+canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+* {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+main {
+    color: black;
+    position: absolute;
+    width: 100%;
+    margin: 0px auto;
+    padding: 120px 0px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+header {
+    grid-column: 2 / span 5;
+    font-size: 40px;
+    padding: 32px;
+    margin-bottom: 150px;
+}
+
+section, audio {
+    grid-column: 2 / 8;
+    padding: 16px;
+    font-size: 25px;
+    line-height: 1.5;
+    margin-bottom: 100px;
+}
+
